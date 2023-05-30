@@ -1,8 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
 
-import static java.lang.Thread.sleep;
-
 public class TwoSum {
 
     /**
