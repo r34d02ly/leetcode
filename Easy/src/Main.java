@@ -10,8 +10,13 @@ public class Main {
         //palindrome.methodTest();
 
         // 13.Roman to Integer
-        RomanToInteger romanToInteger = new RomanToInteger();
-        romanToInteger.methodTest();
+        //RomanToInteger romanToInteger = new RomanToInteger();
+        //romanToInteger.methodTest();
+
+        // 14.Longest Common Prefix
+        LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
+        longestCommonPrefix.methodTest();
+
 
     }
 }
