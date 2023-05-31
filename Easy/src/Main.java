@@ -6,7 +6,12 @@ public class Main {
         //twoSum.methodTest();
 
         // 9. Palindrome Number
-        Palindrome palindrome = new Palindrome();
-        palindrome.methodTest();
+        //Palindrome palindrome = new Palindrome();
+        //palindrome.methodTest();
+
+        // 13.Roman to Integer
+        RomanToInteger romanToInteger = new RomanToInteger();
+        romanToInteger.methodTest();
+
     }
 }
