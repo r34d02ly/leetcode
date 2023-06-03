@@ -1,4 +1,5 @@
 import Easy.LongestCommonPrefix;
+import Easy.ValidParentheses;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
@@ -16,9 +17,12 @@ public class Main {
         //romanToInteger.methodTest();
 
         // 14.Longest Common Prefix
-        LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
-        longestCommonPrefix.methodTest();
+        //LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
+        //longestCommonPrefix.methodTest();
 
+        // 20. Valid Parentheses
+        ValidParentheses validParentheses = new ValidParentheses();
+        validParentheses.methodTest();
 
     }
 }
