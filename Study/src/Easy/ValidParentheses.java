@@ -1,5 +1,8 @@
 package Easy;
 
+import java.util.Arrays;
+import java.util.Stack;
+
 public class ValidParentheses {
 
     /**
@@ -38,13 +41,49 @@ public class ValidParentheses {
 
     }
 
+
     public boolean isValid02(String s) {
+        Stack<Character> stack = new Stack<>();
+        for(char c : s.toCharArray()) {
+            //만약 여는 태그면 스택에 일단 넣음
+            if(c == '(' || c == '[' || c == '{') {
+                stack.push(c);
+            } else {
+                // 닫는 태그인 상황에서 비교해야 되는데 비어있으면 탈락
+                if(stack.isEmpty()) {
+                    return false;
+                }
+                // 짝 맞는거 나올때마다 스택에서 꺼냄
+                if(stack.peek() == '(' && c == ')' ) {
+                    stack.pop();
+                } else if(stack.peek() == '[' && c == ']' ) {
+                    stack.pop();
+                } else if(stack.peek() == '[' && c == ']' ) {
+                    stack.pop();
+                } else {
+                    return false;
+                }
+            }
+        }
+
+        // 문자열 다 돌고 나서 스택이 비어있는지 체크해서 리턴
+        return stack.isEmpty();
+    }
+
+    public boolean isValid03(String s) {
         System.out.println(s);
         int[] stack = new int[s.length()];
-        int top = -1;
+        int top = 0;
         for (char c : s.toCharArray()) {
-            if (c == ')' || c == '}' || c == ']') {
-                if (top != -1) {
+            // 여는 괄호일 때마다 스택에 넣는다.
+            if (c == '(' || c == '[' || c == '{') {
+                stack[++top] = c;
+            } else {
+                // 닫는 태그인 상황에서 비교해야 되는데 비어있으면 탈락
+                if (top == 0) {
+                    return false;
+                } else {
+                    // 짝 맞는거 나올때마다 스택에서 꺼냄
                     if ((c == ')' && stack[top] == '(')
                             || (c == '}' && stack[top] == '{')
                             || (c == ']' && stack[top] == '[')) {
@@ -52,22 +91,17 @@ public class ValidParentheses {
                     } else {
                         return false;
                     }
-                } else {
-                    return false;
                 }
-
-            // 여는 괄호일 때 스택에 넣는다.
-            } else {
-                stack[++top] = c;
             }
         }
-        return top == -1;
+        return top == 0;
     }
 
     public void methodTest() {
         for(String s : testS) {
             //System.out.println(isValid01(s));
-            System.out.println(isValid02(s));
+            //System.out.println(isValid02(s));
+            System.out.println(isValid03(s));
             System.out.println("=================");
         }
     }
