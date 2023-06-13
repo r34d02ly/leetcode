@@ -1,5 +1,4 @@
-import Easy.LongestCommonPrefix;
-import Easy.ValidParentheses;
+import Easy.*;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
@@ -21,8 +20,24 @@ public class Main {
         //longestCommonPrefix.methodTest();
 
         // 20. Valid Parentheses
-        ValidParentheses validParentheses = new ValidParentheses();
-        validParentheses.methodTest();
+        //ValidParentheses validParentheses = new ValidParentheses();
+        //validParentheses.methodTest();
+
+        // 1480. Running Sum of 1d Array
+        //RunningSumArray runningSumArray = new RunningSumArray();
+        //runningSumArray.methodTest();
+
+        // 1672. Richest Customer Wealth
+        //RichestCustomerWealth richestCustomerWealth = new RichestCustomerWealth();
+        //richestCustomerWealth.methodTest();
+
+        // 412. Fizz Buzz
+        //FizzBuzz fizzBuzz = new FizzBuzz();
+        //fizzBuzz.methodTest();
+
+        // 1342.Number of Steps to Reduce a Number to Zero
+        NumberStepsReduceNumberZero numberStepsReduceNumberZero = new NumberStepsReduceNumberZero();
+        numberStepsReduceNumberZero.methodTest();
 
     }
 }
