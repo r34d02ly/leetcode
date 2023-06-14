@@ -36,8 +36,16 @@ public class Main {
         //fizzBuzz.methodTest();
 
         // 1342.Number of Steps to Reduce a Number to Zero
-        NumberStepsReduceNumberZero numberStepsReduceNumberZero = new NumberStepsReduceNumberZero();
-        numberStepsReduceNumberZero.methodTest();
+        //NumberStepsReduceNumberZero numberStepsReduceNumberZero = new NumberStepsReduceNumberZero();
+        //numberStepsReduceNumberZero.methodTest();
+
+        // 876. Middle of the Linked List
+        //MiddleLinkedList middleLinkedList = new MiddleLinkedList();
+        //middleLinkedList.methodTest();
+
+        // 383. Ransom Note
+        RansomNote ransomNote = new RansomNote();
+        ransomNote.methodTest();
 
     }
 }
