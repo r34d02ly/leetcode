@@ -1,3 +1,5 @@
+package Easy;
+
 import Easy.*;
 
 public class Main {
@@ -44,8 +46,8 @@ public class Main {
         //middleLinkedList.methodTest();
 
         // 383. Ransom Note
-        RansomNote ransomNote = new RansomNote();
-        ransomNote.methodTest();
+        //RansomNote ransomNote = new RansomNote();
+        //ransomNote.methodTest();
 
     }
 }
